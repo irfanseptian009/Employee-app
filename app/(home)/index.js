@@ -24,13 +24,19 @@ const index = () => {
           </View>
 
           <View className=" flex-row items-center ">
-            <Pressable className="bg-gray-200  mt-2 mx-2 my-2 p-8 rounded-xl w-52 h-44 flex items-center justify-center flex-1">
+            <Pressable
+              onPress={() => router.push("/(home)/employees")}
+              className="bg-gray-200  mt-2 mx-2 my-2 p-8 rounded-xl w-52 h-44 flex items-center justify-center flex-1"
+            >
               <View className="flex items-center justify-center w-32 h-28 rounded-lg bg-white">
                 <FontAwesome6 name="people-group" size={40} color="black" />
                 <Text className=" mt-2 text-md text">Employee List</Text>
               </View>
             </Pressable>
-            <Pressable className="bg-gray-200  mt-2 mx-2 my-2 p-8 w-52 h-44 rounded-xl flex items-center justify-center flex-1">
+            <Pressable
+              onPress={() => router.push("/(home)/markattendance")}
+              className="bg-gray-200  mt-2 mx-2 my-2 p-8 w-52 h-44 rounded-xl flex items-center justify-center flex-1"
+            >
               <View className="flex items-center justify-center w-32 h-28  rounded-lg bg-white">
                 <Ionicons name="bookmarks" size={40} color="black" />
                 <Text className=" mt-2 text-md ">Mark Attendance</Text>
